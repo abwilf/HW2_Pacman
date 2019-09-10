@@ -26,13 +26,18 @@ pip3 install future
 ```
 Note: if this last step fails, and you may need this [fix](https://askubuntu.com/questions/1061486/unable-to-locate-package-python-pip-when-trying-to-install-from-fresh-18-04-in).
 
-To test that all the dependencies worked, run this command and play pacman.  If this works, you can get started coding and testing.
+To test that all the dependencies worked, run this command to play a game of pacman.  
 ```
 python3 pacman.py
 ```
 
-## Testing Your Code
-The staff has provided some test cases for you to test your code in `test.py`.  Run `python3 test.py` to see it in action.  Note that these are **not comprehensive**.  Your grade will be based partially on these test cases, but will also be based on a larger suite of hidden test cases.  For this reason, we strongly recommend that you write your own test cases.
+Note: you should be running some version of python 3.6.  Check this with `python3 --version`, and you should see `Python 3.6.x`.
+
+Currently, a trivial search agent, GoWestAgent, has already been implemented for you. This search agent only moves west. In some mazes, it may help Pac-Man find food, but it may not in others. Try out these 2 commands!  If this works, you can get started coding and testing.
+```
+python3 pacman.py --layout testMaze --pacman GoWestAgent
+python3 pacman.py --layout tinyMaze --pacman GoWestAgent
+```
 
 ## Credit
 All credit for this portion of the homework goes to [UC Berkeley’s CS188 course](http://ai.berkeley.edu).
